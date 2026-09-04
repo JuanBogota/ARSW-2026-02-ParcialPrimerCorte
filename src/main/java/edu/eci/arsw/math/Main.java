@@ -15,18 +15,11 @@ public class Main {
 
     public static void main(String a[]) {
         System.out.println(bytesToHex(PiDigits.getDigits(0, 10)));
-        System.out.println(bytesToHex(PiDigits.getDigits(1, 100)));
-        System.out.println(bytesToHex(PiDigits.getDigits(1, 1000000)));
+        //System.out.println(bytesToHex(PiDigits.getDigits(1, 100)));
+        //System.out.println(bytesToHex(PiDigits.getDigits(1, 1000000)));
 
-        CalculateThread t1 = new CalculateThread(1,250000);
-        CalculateThread t2 = new CalculateThread(2,500000);
-        CalculateThread t3 = new CalculateThread(3,750000);
-        CalculateThread t4 = new CalculateThread(4,1000000);
+        CalculateThread t1 = new CalculateThread();
         t1.run();
-        t2.run();
-        t3.run();
-        t4.run();
-
     }
 
     private final static char[] hexArray = "0123456789ABCDEF".toCharArray();

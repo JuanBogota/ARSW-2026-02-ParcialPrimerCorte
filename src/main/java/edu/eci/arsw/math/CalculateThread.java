@@ -19,10 +19,12 @@ public class CalculateThread extends Thread{
     @Override
     public void run(){
         for(int i = 0; i <= DigitsPerSum; i++){
-             c = PiDigits.getDigits(start, DigitsPerSum);
-
+            byte[] c = PiDigits.getDigits(1, 1000000, 2);
         }
+    }
+
+    @Override
+    public void start(){
 
     }
-    
 }
